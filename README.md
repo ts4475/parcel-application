@@ -1,9 +1,12 @@
 # Parcel Application 
 
 #### PREREQUISITES:
-  * Intellij IDE
+  * Intellij IDE 
+     * Link: https://www.jetbrains.com/idea/download/#section=windows
   * MySQL Workbench
+     * Link : https://dev.mysql.com/downloads/workbench/
   * Postman
+    * Link : https://www.postman.com/ 
     
 ##  How to start ?
 
