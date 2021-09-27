@@ -1,0 +1,7 @@
+com\edubay\controller\UserController.class
+com\edubay\model\User.class
+com\edubay\error\UserNotFoundException.class
+com\edubay\StartEduBayApplication.class
+com\edubay\error\CustomGlobalExceptionHandler.class
+com\edubay\dao\UserRepository.class
+com\edubay\error\UserUnSupportedFieldPatchException.class
