@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "c6d055a5-25d4-4152-8e91-cc258512ba4c",
+		"name": "ParcelApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getuser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parcel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parcel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adduser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"date_of_Booking\": \"2021-09-20\",\r\n        \"date_of_Delivery\": \"2021-09-14\",\r\n        \"from_Address\": \"Burdwan\",\r\n        \"from_Name\": \"sha\",\r\n        \"to_Address\": \"Bur\",\r\n        \"to_Name\": \"SRM\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parcel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parcel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"from_Address\": \"BUR\",\r\n        \"date_of_Delivery\": \"2021-09-15\",\r\n        \"date_of_Booking\": \"2021-09-15\",\r\n        \"to_Name\": \"SRM\",\r\n        \"from_Name\": \"ashalalalla\",\r\n        \"parcelId\": 1,\r\n        \"to_Address\": \"WB\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parcel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parcel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parcel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parcel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
